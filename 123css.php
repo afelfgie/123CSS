@@ -6,7 +6,7 @@ $bersih="cls";
 $bersih="clear";
 }
 function input($echo) {
-	echo $echo." \033[91m--> ";
+	echo $echo." \033[91m-->\e[36m ";
 /*Color*/
 $green = "\033[92m";
 $red = "\033[91m";
@@ -96,9 +96,9 @@ echo "\n$n
 \033[34;1m|=========================================>
 \033[01;33m[+]Author  : \033[1;32mGunadiCBR
 \033[01;33m[+]Contack : \033[1;32m085341899229
-\033[01;33m[+]Version : \033[1;32m1.3
+\033[01;33m[+]Code.   : \033[1;32PHP
 \033[01;33m[+]Date    : \033[1;32m17-08-2018
-\033[01;33m[+]code    : \033[1;32mPHP
+\033[01;33m[+]Versi   : \033[1;32m1.3.4
 \033[01;33m[+]Team    : \033[1;32mMls18Hckr
 \033[1;33m[-]Spesial Thanks To:
 \033[01;32m 1. afel
@@ -121,7 +121,7 @@ echo "Pencet".$red." [ENTER] ".$green."untuk kembali ke menu";
 } else {
 	echo "\n";
 	echo "\e[91m[!]WRONG INPUT[!]\n";
-	echo "\e[101m[+] Try Again [+]€\n";
+	
         sleep(1);
         goto menu;
 }
